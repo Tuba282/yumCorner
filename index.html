@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YumCorner</title>
+    <link rel="shortcut icon" href="./aseets/webIcon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <img src="./aseets/logo.png" alt="" />
+        </div>
+        <div id="pages">
+          <ul type="none" class="sidebarPages" id="sidebarPages"></ul>
+        </div>
+        <div class="plan">
+          <span>Craving something special ?</span>
+          <img
+            class="glow center"
+            src="./aseets/planMeal-img.png"
+            width="100"
+            height="100"
+            alt=""
+          />
+          <button class="center">Let's plan it!</button>
+        </div>
+        <div class="flexBox">
+          <img
+            src="./aseets/userGirl.png"
+            id="userAvatar"
+            width="60"
+            height="60"
+          />
+          <div id="ProfileContainer">
+            <p
+              style="
+                font-family: title;
+                letter-spacing: 0.1em;
+                filter: drop-shadow(0px 0px 3px #ffffff);
+              "
+              id="gotUserName"
+            >
+              Alice
+            </p>
+            <span>free Account</span>
+          </div>
+        </div>
+        <i
+          id="bars"
+          class="fa-solid fa-bars"
+          style="color: var(--lightGrey)"
+        ></i>
+      </div>
+      <!-- mainContent -->
+      <div class="mainContent">
+        <div class="firstContent">
+          <p><span id="topPageName" class="glow"></span></p>
+
+          <div class="MsgIcons">
+            <span>
+              <i class="fa-regular fa-bell" style="color: var(--dark)"></i>
+            </span>
+            <span>
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: var(--dark)"
+              ></i>
+            </span>
+          </div>
+        </div>
+        <!-- Home container -->
+        <div id="HomeContainer" >
+          <!-- hero-section -->
+          <div class="hero">
+            <div class="heroContent">
+              <h1>
+                Delight in Every Bite :
+                <span>
+                  <img
+                    src="./aseets/burger-(1).png"
+                    class="heroImg heroImg-1"
+                  />
+                  <img
+                    src="./aseets/burger-(2).png"
+                    class="heroImg heroImg-2"
+                  />
+                  <img
+                    src="./aseets/burger-(3).png"
+                    class="heroImg heroImg-3"
+                  />
+                  <img
+                    src="./aseets/burger-(4).png"
+                    class="heroImg heroImg-4"
+                  />
+                </span>
+              </h1>
+              <h2>Explore Our Culinary World ...</h2>
+              <p>
+                "Beyond imaginations, a new world of flavors is beginning its
+                journey. Every recipe holds a small magic of love, and every
+                bite brings a new sensation of taste. Enjoy our unique dishes
+                and best recipes today. Whatever flavor you are seeking, you
+                will find it here. Be a part of our range filled with fresh
+                ingredients, authentic flavors, and a passion for cooking."
+              </p>
+            </div>
+            <div class="heroSlider glow">
+              <div class="Round">
+                <div class="innerRound">
+                  <img
+                    src="./aseets/hero-Img-(9).png"
+                    class="roundImg roundImg-1"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(2).png"
+                    class="roundImg roundImg-2"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(3).png"
+                    class="roundImg roundImg-3"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(4).png"
+                    class="roundImg roundImg-4"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(5).png"
+                    class="roundImg roundImg-5"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(6).png"
+                    class="roundImg roundImg-6"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(7).png"
+                    class="roundImg roundImg-7"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(8).png"
+                    class="roundImg roundImg-8"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(11).png"
+                    class="roundImg roundImg-9"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(10).png"
+                    class="roundImg roundImg-10"
+                  />
+                  <img
+                    src="./aseets/hero-Img-(1).png"
+                    class="roundImg roundImg-11"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about-section -->
+          <div class="about">
+            <h1>About us</h1>
+            <p>
+              Welcome to our culinary haven, where every dish tells a story and
+              every bite is a journey. At <span class="span">Yum Corner</span>,
+              we believe that food is more than just sustenance—it's an
+              experience, a celebration of culture, and a way to bring people
+              together.
+            </p>
+
+            <p>
+              <b>Our Mission : </b>To deliver delightful and memorable dining
+              experiences by combining fresh ingredients, innovative recipes,
+              and a passion for cooking. We aim to create a space where food
+              lovers can come together, share their favorite dishes, and
+              discover new flavors.
+            </p>
+            <div class="container">
+              <div class="ImgContent "></div>
+              <div class="textContent">
+                
+                <!-- first point -->
+                <div class="aboutPoints">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 20 20"><rect width="20" height="20" fill="none"/><path fill="#ffffff44" d="M17.604 3.332C12.99 4 12.075 2.833 10 1C7.925 2.833 7.01 4 2.396 3.332C-.063 15.58 10 19 10 19s10.063-3.42 7.604-15.668m-5.131 9.977L10 12.009l-2.472 1.3L8 10.556l-2-1.95l2.764-.401L10 5.7l1.236 2.505L14 8.606l-2 1.949z"/></svg>
+                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <span>
+                    <h1>Authentic Recipes</h1>
+                      <span class="point-p">
+                      <img src="./aseets/food-icon.png" width="20" height="20">
+                      <p>Our dishes are crafted with love and authenticity, drawing inspiration from diverse cuisines around the world.</p>
+                      </span>
+                  </span>
+                </div>
+                <!-- second point -->
+                <div class="aboutPoints">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#ffffff44" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10c-1.6 0-3.112-.376-4.452-1.044a1.63 1.63 0 0 0-1.149-.133l-2.226.596a1.3 1.3 0 0 1-1.591-1.592l.595-2.226a1.63 1.63 0 0 0-.134-1.148A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10m-14.5-.892c0 1.369 1.319 2.805 2.529 3.834c.823.7 1.235 1.051 1.971 1.051s1.148-.35 1.971-1.051c1.21-1.03 2.529-2.465 2.529-3.834c0-2.677-2.475-3.676-4.5-1.608c-2.025-2.068-4.5-1.069-4.5 1.608" clip-rule="evenodd"/></svg>
+                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <span>
+                    <h1>Sustainability</h1>
+                      <span class="point-p">
+                      <img src="./aseets/food-icon.png" width="20" height="20">
+                      <p> From farm to table, we ensure that our process is eco-friendly and responsible.</p>
+                      </span>
+                  </span>
+                </div>
+                <!-- third point -->
+                <div class="aboutPoints">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#ffffff44" d="M9.2 8.25L11.85 3h.3l2.65 5.25zm2.05 11.85L2.625 9.75h8.625zm1.5 0V9.75h8.625zm3.7-11.85L13.85 3H19l2.625 5.25zm-14.075 0L5 3h5.15l-2.6 5.25z"/></svg>
+                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <span>
+                    <h1>Quality Ingredients</h1>
+                      <span class="point-p">
+                      <img src="./aseets/food-icon.png" width="20" height="20">
+                      <p>We source only the freshest and finest ingredients to ensure every meal is a culinary masterpiece.</p>
+                      </span>
+                  </span>
+                </div>
+                <!-- forth point -->
+                <div class="aboutPoints">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="none" stroke="#ffffff44" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" d="M21.897 6.63c.32.898-.13 1.513-.998 2.118c-.702.488-1.595 1.017-2.542 1.922c-.928.887-1.834 1.955-2.639 3.006a39 39 0 0 0-2.71 3.99a1.65 1.65 0 0 1-1.446.834a1.66 1.66 0 0 1-1.426-.873c-.748-1.363-1.326-1.901-1.592-2.094c-.737-.537-1.544-.63-1.544-1.8C7 12.776 7.746 12 8.667 12c.658.027 1.262.309 1.789.693c.342.249.705.578 1.082 1.012c.442-.654.975-1.408 1.573-2.189c.868-1.133 1.892-2.35 2.99-3.399c1.08-1.032 2.33-1.998 3.653-2.508c.863-.333 1.822.124 2.143 1.022M4.44 12.076a2.7 2.7 0 0 0-.6-.125l-.141-.006c-.938 0-1.699.783-1.699 1.748c0 .874.623 1.598 1.437 1.728q.042.02.137.087c.27.195.86.737 1.623 2.111c.298.538.851.873 1.453.88a1.67 1.67 0 0 0 1.112-.407M15 5.5c-1.35.515-2.622 1.489-3.723 2.53c-.384.363-.76.746-1.123 1.139" color="#ffffff44"/></svg>
+                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <span>
+                    <h1>Authentic Recipes</h1>
+                      <span class="point-p">
+                      <img src="./aseets/food-icon.png" width="20" height="20">
+                      <p>Our dishes are crafted with love and authenticity, drawing inspiration from diverse cuisines around the world.</p>
+                      </span>
+                  </span>
+                </div>
+                <!-- fifth point -->
+                <div class="aboutPoints">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none"><path fill="#ffffff44" d="M19 18h.75zM5 14.584h.75a.75.75 0 0 0-.45-.687zm14 0l-.3-.687a.75.75 0 0 0-.45.687zM15.75 7a.75.75 0 0 0 1.5 0zm-9 0a.75.75 0 0 0 1.5 0zM7 4.25A5.75 5.75 0 0 0 1.25 10h1.5A4.25 4.25 0 0 1 7 5.75zm10 1.5A4.25 4.25 0 0 1 21.25 10h1.5A5.75 5.75 0 0 0 17 4.25zm-2 15.5H9v1.5h6zm-6 0c-.964 0-1.612-.002-2.095-.067c-.461-.062-.659-.169-.789-.3l-1.06 1.062c.455.455 1.022.64 1.65.725c.606.082 1.372.08 2.294.08zM4.25 18c0 .922-.002 1.688.08 2.294c.084.628.27 1.195.725 1.65l1.061-1.06c-.13-.13-.237-.328-.3-.79c-.064-.482-.066-1.13-.066-2.094zm14 0c0 .964-.002 1.612-.067 2.095c-.062.461-.169.659-.3.789l1.062 1.06c.455-.455.64-1.022.725-1.65c.082-.606.08-1.372.08-2.294zM15 22.75c.922 0 1.688.002 2.294-.08c.628-.084 1.195-.27 1.65-.726l-1.06-1.06c-.13.13-.328.237-.79.3c-.482.064-1.13.066-2.094.066zm-8-17q.32 0 .628.046l.219-1.484A6 6 0 0 0 7 4.25zm5-4.5a5.25 5.25 0 0 0-4.973 3.563l1.42.482A3.75 3.75 0 0 1 12 2.75zM7.027 4.813A5.3 5.3 0 0 0 6.75 6.5h1.5c0-.423.07-.828.198-1.205zM17 4.25q-.431 0-.847.062l.22 1.484A4 4 0 0 1 17 5.75zm-5-1.5a3.75 3.75 0 0 1 3.552 2.545l1.42-.482A5.25 5.25 0 0 0 12 1.25zm3.552 2.545c.128.377.198.782.198 1.205h1.5c0-.589-.097-1.156-.277-1.687zM5.75 18v-3.416h-1.5V18zm-.45-4.103A4.25 4.25 0 0 1 2.75 10h-1.5a5.75 5.75 0 0 0 3.45 5.271zm12.95.687V18h1.5v-3.416zm3-4.584a4.25 4.25 0 0 1-2.55 3.897l.6 1.374A5.75 5.75 0 0 0 22.75 10zm-5.5-3.5V7h1.5v-.5zm-9 0V7h1.5v-.5zm4.293 7.169l-.444.605zM12 9.995l-.519.542a.75.75 0 0 0 1.038 0zm.957 3.674l-.444-.605zm-.957.462v-.75zm-.514-1.067c-.417-.306-.878-.69-1.227-1.092c-.368-.426-.509-.757-.509-.972h-1.5c0 .77.441 1.451.875 1.953c.453.524 1.014.983 1.474 1.32zM9.75 11c0-.576.263-.826.492-.907c.25-.088.714-.06 1.24.444l1.037-1.084c-.825-.79-1.861-1.095-2.773-.775C8.812 9.005 8.25 9.903 8.25 11zm3.65 3.274c.46-.338 1.022-.797 1.475-1.321c.434-.502.875-1.183.875-1.953h-1.5c0 .215-.141.546-.51.972c-.348.403-.809.786-1.226 1.092zM15.75 11c0-1.097-.562-1.995-1.496-2.322c-.912-.32-1.948-.014-2.773.775l1.038 1.084c.525-.504.989-.532 1.24-.444c.228.08.491.331.491.907zm-5.15 3.274c.368.27.782.607 1.4.607v-1.5c-.024 0-.04 0-.094-.029a4 4 0 0 1-.42-.288zm1.914-1.21a4 4 0 0 1-.42.288c-.054.029-.07.029-.094.029v1.5c.618 0 1.032-.337 1.4-.607z"/><path stroke="#ffffff44" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" d="M5 18h14"/></g></svg>
+                  <span>
+                    <h1>Passionate Chefs</h1>
+                      <span class="point-p">
+                      <img src="./aseets/food-icon.png" width="20" height="20">
+                      <p>Our team of expert chefs is dedicated to bringing you the best flavors and textures, with a touch of creativity in every plate.</p>
+                      </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <!-- About Conatiner -->
+        <div id="AboutContainer" style="display: none">
+          <h1>AboutContainer</h1>
+        </div>
+        <!-- Recipe Container -->
+        <div id="RecipeContainer" style="display: none">
+          <h1>RecipeContainer</h1>
+        </div>
+        <!-- Tips Container -->
+        <div id="TipsContainer" style="display: none">
+          <h1>TipsContainer</h1>
+        </div>
+        <!-- Gallery Container -->
+        <div id="GalleryContainer" style="display: none">
+          <h1>GalleryContainer</h1>
+        </div>
+        <!-- Wishlist Container -->
+        <div id="WishlistContainer" style="display: none">
+          <h1>WishlistContainer</h1>
+        </div>
+        <!-- SignUp Container -->
+        <div id="SignUpContainer" style="display: none">
+          <h1>SignUpContainer</h1>
+        </div>
+
+        <!-- Login Conatiner -->
+        <div id="LoginContainer" style="display: none">
+          <h1>LoginContainer</h1>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
