@@ -108,13 +108,6 @@ bars.addEventListener("click", () => {
 })
 
 //********************************** Page linking  */ 
-//  ['Home', 'About Us', 'Recipe', 'Tips', 'Gallery', 'WishList']
-// dashboardContainer
-// tableContainer
-// BillingContainer
-// RtlContainer
-// ProfileContainer
-// SignUpContainer
 const ids = ['Home', 'About Us', 'Recipe', 'Tips', 'Gallery', 'WishList', 'Profile', 'SignUp', 'Login'];
 const sections = [
     "HomeContainer",
