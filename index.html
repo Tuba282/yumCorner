@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="about.css" />
   </head>
   <body>
     <div class="dashboard">
@@ -24,6 +25,25 @@
       <div class="sidebar">
         <div class="logo">
           <img src="./aseets/logo.png" alt="" />
+          <svg
+            id="sidebarCollapse"
+            class="sidebarCollapse"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <rect width="24" height="24" fill="none" />
+            <path
+              fill="none"
+              stroke="#ffffffbd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.4"
+              d="M3 4v16M7.5 4v13M12 4v13m4.5-13v13M21 4v16M7.5 20h.009M12 20h.009m4.491 0h.009"
+              color="#ffffffbd"
+            />
+          </svg>
         </div>
         <div id="pages">
           <ul type="none" class="sidebarPages" id="sidebarPages"></ul>
@@ -68,23 +88,9 @@
       </div>
       <!-- mainContent -->
       <div class="mainContent">
-        <div class="firstContent">
-          <p><span id="topPageName" class="glow"></span></p>
-
-          <div class="MsgIcons">
-            <span>
-              <i class="fa-regular fa-bell" style="color: var(--dark)"></i>
-            </span>
-            <span>
-              <i
-                class="fa-solid fa-magnifying-glass"
-                style="color: var(--dark)"
-              ></i>
-            </span>
-          </div>
-        </div>
+        <!--  -->
         <!-- Home container -->
-        <div id="HomeContainer" >
+        <div id="HomeContainer">
           <!-- hero-section -->
           <div class="hero">
             <div class="heroContent">
@@ -172,7 +178,7 @@
           </div>
           <!-- about-section -->
           <div class="about">
-            <h1>About us</h1>
+            <h1>What we do</h1>
             <p>
               Welcome to our culinary haven, where every dish tells a story and
               every bite is a journey. At <span class="span">Yum Corner</span>,
@@ -189,76 +195,437 @@
               discover new flavors.
             </p>
             <div class="container">
-              <div class="ImgContent "></div>
+              <div class="ImgContent"></div>
               <div class="textContent">
-                
                 <!-- first point -->
                 <div class="aboutPoints">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 20 20"><rect width="20" height="20" fill="none"/><path fill="#ffffff44" d="M17.604 3.332C12.99 4 12.075 2.833 10 1C7.925 2.833 7.01 4 2.396 3.332C-.063 15.58 10 19 10 19s10.063-3.42 7.604-15.668m-5.131 9.977L10 12.009l-2.472 1.3L8 10.556l-2-1.95l2.764-.401L10 5.7l1.236 2.505L14 8.606l-2 1.949z"/></svg>
-                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 20 20"
+                  >
+                    <rect width="20" height="20" fill="none" />
+                    <path
+                      fill="#ffffff44"
+                      d="M17.604 3.332C12.99 4 12.075 2.833 10 1C7.925 2.833 7.01 4 2.396 3.332C-.063 15.58 10 19 10 19s10.063-3.42 7.604-15.668m-5.131 9.977L10 12.009l-2.472 1.3L8 10.556l-2-1.95l2.764-.401L10 5.7l1.236 2.505L14 8.606l-2 1.949z"
+                    />
+                  </svg>
+                  <img
+                    src="./aseets/line.png"
+                    width="20"
+                    class="line"
+                    height="60"
+                    alt=""
+                  />
                   <span>
                     <h1>Authentic Recipes</h1>
-                      <span class="point-p">
-                      <img src="./aseets/food-icon.png" width="20" height="20">
-                      <p>Our dishes are crafted with love and authenticity, drawing inspiration from diverse cuisines around the world.</p>
-                      </span>
+                    <span class="point-p">
+                      <img
+                        src="./aseets/food-icon.png"
+                        width="20"
+                        height="20"
+                      />
+                      <p>
+                        Our dishes are crafted with love and authenticity,
+                        drawing inspiration from diverse cuisines around the
+                        world.
+                      </p>
+                    </span>
                   </span>
                 </div>
                 <!-- second point -->
                 <div class="aboutPoints">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#ffffff44" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10c-1.6 0-3.112-.376-4.452-1.044a1.63 1.63 0 0 0-1.149-.133l-2.226.596a1.3 1.3 0 0 1-1.591-1.592l.595-2.226a1.63 1.63 0 0 0-.134-1.148A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10m-14.5-.892c0 1.369 1.319 2.805 2.529 3.834c.823.7 1.235 1.051 1.971 1.051s1.148-.35 1.971-1.051c1.21-1.03 2.529-2.465 2.529-3.834c0-2.677-2.475-3.676-4.5-1.608c-2.025-2.068-4.5-1.069-4.5 1.608" clip-rule="evenodd"/></svg>
-                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="24" height="24" fill="none" />
+                    <path
+                      fill="#ffffff44"
+                      fill-rule="evenodd"
+                      d="M22 12c0 5.523-4.477 10-10 10c-1.6 0-3.112-.376-4.452-1.044a1.63 1.63 0 0 0-1.149-.133l-2.226.596a1.3 1.3 0 0 1-1.591-1.592l.595-2.226a1.63 1.63 0 0 0-.134-1.148A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10m-14.5-.892c0 1.369 1.319 2.805 2.529 3.834c.823.7 1.235 1.051 1.971 1.051s1.148-.35 1.971-1.051c1.21-1.03 2.529-2.465 2.529-3.834c0-2.677-2.475-3.676-4.5-1.608c-2.025-2.068-4.5-1.069-4.5 1.608"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <img
+                    src="./aseets/line.png"
+                    width="20"
+                    class="line"
+                    height="60"
+                    alt=""
+                  />
                   <span>
                     <h1>Sustainability</h1>
-                      <span class="point-p">
-                      <img src="./aseets/food-icon.png" width="20" height="20">
-                      <p> From farm to table, we ensure that our process is eco-friendly and responsible.</p>
-                      </span>
+                    <span class="point-p">
+                      <img
+                        src="./aseets/food-icon.png"
+                        width="20"
+                        height="20"
+                      />
+                      <p>
+                        From farm to table, we ensure that our process is
+                        eco-friendly and responsible.
+                      </p>
+                    </span>
                   </span>
                 </div>
                 <!-- third point -->
                 <div class="aboutPoints">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="#ffffff44" d="M9.2 8.25L11.85 3h.3l2.65 5.25zm2.05 11.85L2.625 9.75h8.625zm1.5 0V9.75h8.625zm3.7-11.85L13.85 3H19l2.625 5.25zm-14.075 0L5 3h5.15l-2.6 5.25z"/></svg>
-                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="55"
+                    height="55"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="24" height="24" fill="none" />
+                    <path
+                      fill="#ffffff44"
+                      d="M9.2 8.25L11.85 3h.3l2.65 5.25zm2.05 11.85L2.625 9.75h8.625zm1.5 0V9.75h8.625zm3.7-11.85L13.85 3H19l2.625 5.25zm-14.075 0L5 3h5.15l-2.6 5.25z"
+                    />
+                  </svg>
+                  <img
+                    src="./aseets/line.png"
+                    width="20"
+                    class="line"
+                    height="60"
+                    alt=""
+                  />
                   <span>
                     <h1>Quality Ingredients</h1>
-                      <span class="point-p">
-                      <img src="./aseets/food-icon.png" width="20" height="20">
-                      <p>We source only the freshest and finest ingredients to ensure every meal is a culinary masterpiece.</p>
-                      </span>
+                    <span class="point-p">
+                      <img
+                        src="./aseets/food-icon.png"
+                        width="20"
+                        height="20"
+                      />
+                      <p>
+                        We source only the freshest and finest ingredients to
+                        ensure every meal is a culinary masterpiece.
+                      </p>
+                    </span>
                   </span>
                 </div>
                 <!-- forth point -->
                 <div class="aboutPoints">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><path fill="none" stroke="#ffffff44" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" d="M21.897 6.63c.32.898-.13 1.513-.998 2.118c-.702.488-1.595 1.017-2.542 1.922c-.928.887-1.834 1.955-2.639 3.006a39 39 0 0 0-2.71 3.99a1.65 1.65 0 0 1-1.446.834a1.66 1.66 0 0 1-1.426-.873c-.748-1.363-1.326-1.901-1.592-2.094c-.737-.537-1.544-.63-1.544-1.8C7 12.776 7.746 12 8.667 12c.658.027 1.262.309 1.789.693c.342.249.705.578 1.082 1.012c.442-.654.975-1.408 1.573-2.189c.868-1.133 1.892-2.35 2.99-3.399c1.08-1.032 2.33-1.998 3.653-2.508c.863-.333 1.822.124 2.143 1.022M4.44 12.076a2.7 2.7 0 0 0-.6-.125l-.141-.006c-.938 0-1.699.783-1.699 1.748c0 .874.623 1.598 1.437 1.728q.042.02.137.087c.27.195.86.737 1.623 2.111c.298.538.851.873 1.453.88a1.67 1.67 0 0 0 1.112-.407M15 5.5c-1.35.515-2.622 1.489-3.723 2.53c-.384.363-.76.746-1.123 1.139" color="#ffffff44"/></svg>
-                  <img src="./aseets/line.png" width="20" class="line" height="60" alt="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="24" height="24" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="#ffffff44"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.1"
+                      d="M21.897 6.63c.32.898-.13 1.513-.998 2.118c-.702.488-1.595 1.017-2.542 1.922c-.928.887-1.834 1.955-2.639 3.006a39 39 0 0 0-2.71 3.99a1.65 1.65 0 0 1-1.446.834a1.66 1.66 0 0 1-1.426-.873c-.748-1.363-1.326-1.901-1.592-2.094c-.737-.537-1.544-.63-1.544-1.8C7 12.776 7.746 12 8.667 12c.658.027 1.262.309 1.789.693c.342.249.705.578 1.082 1.012c.442-.654.975-1.408 1.573-2.189c.868-1.133 1.892-2.35 2.99-3.399c1.08-1.032 2.33-1.998 3.653-2.508c.863-.333 1.822.124 2.143 1.022M4.44 12.076a2.7 2.7 0 0 0-.6-.125l-.141-.006c-.938 0-1.699.783-1.699 1.748c0 .874.623 1.598 1.437 1.728q.042.02.137.087c.27.195.86.737 1.623 2.111c.298.538.851.873 1.453.88a1.67 1.67 0 0 0 1.112-.407M15 5.5c-1.35.515-2.622 1.489-3.723 2.53c-.384.363-.76.746-1.123 1.139"
+                      color="#ffffff44"
+                    />
+                  </svg>
+                  <img
+                    src="./aseets/line.png"
+                    width="20"
+                    class="line"
+                    height="60"
+                    alt=""
+                  />
                   <span>
                     <h1>Authentic Recipes</h1>
-                      <span class="point-p">
-                      <img src="./aseets/food-icon.png" width="20" height="20">
-                      <p>Our dishes are crafted with love and authenticity, drawing inspiration from diverse cuisines around the world.</p>
-                      </span>
+                    <span class="point-p">
+                      <img
+                        src="./aseets/food-icon.png"
+                        width="20"
+                        height="20"
+                      />
+                      <p>
+                        Our dishes are crafted with love and authenticity,
+                        drawing inspiration from diverse cuisines around the
+                        world.
+                      </p>
+                    </span>
                   </span>
                 </div>
                 <!-- fifth point -->
                 <div class="aboutPoints">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/><g fill="none"><path fill="#ffffff44" d="M19 18h.75zM5 14.584h.75a.75.75 0 0 0-.45-.687zm14 0l-.3-.687a.75.75 0 0 0-.45.687zM15.75 7a.75.75 0 0 0 1.5 0zm-9 0a.75.75 0 0 0 1.5 0zM7 4.25A5.75 5.75 0 0 0 1.25 10h1.5A4.25 4.25 0 0 1 7 5.75zm10 1.5A4.25 4.25 0 0 1 21.25 10h1.5A5.75 5.75 0 0 0 17 4.25zm-2 15.5H9v1.5h6zm-6 0c-.964 0-1.612-.002-2.095-.067c-.461-.062-.659-.169-.789-.3l-1.06 1.062c.455.455 1.022.64 1.65.725c.606.082 1.372.08 2.294.08zM4.25 18c0 .922-.002 1.688.08 2.294c.084.628.27 1.195.725 1.65l1.061-1.06c-.13-.13-.237-.328-.3-.79c-.064-.482-.066-1.13-.066-2.094zm14 0c0 .964-.002 1.612-.067 2.095c-.062.461-.169.659-.3.789l1.062 1.06c.455-.455.64-1.022.725-1.65c.082-.606.08-1.372.08-2.294zM15 22.75c.922 0 1.688.002 2.294-.08c.628-.084 1.195-.27 1.65-.726l-1.06-1.06c-.13.13-.328.237-.79.3c-.482.064-1.13.066-2.094.066zm-8-17q.32 0 .628.046l.219-1.484A6 6 0 0 0 7 4.25zm5-4.5a5.25 5.25 0 0 0-4.973 3.563l1.42.482A3.75 3.75 0 0 1 12 2.75zM7.027 4.813A5.3 5.3 0 0 0 6.75 6.5h1.5c0-.423.07-.828.198-1.205zM17 4.25q-.431 0-.847.062l.22 1.484A4 4 0 0 1 17 5.75zm-5-1.5a3.75 3.75 0 0 1 3.552 2.545l1.42-.482A5.25 5.25 0 0 0 12 1.25zm3.552 2.545c.128.377.198.782.198 1.205h1.5c0-.589-.097-1.156-.277-1.687zM5.75 18v-3.416h-1.5V18zm-.45-4.103A4.25 4.25 0 0 1 2.75 10h-1.5a5.75 5.75 0 0 0 3.45 5.271zm12.95.687V18h1.5v-3.416zm3-4.584a4.25 4.25 0 0 1-2.55 3.897l.6 1.374A5.75 5.75 0 0 0 22.75 10zm-5.5-3.5V7h1.5v-.5zm-9 0V7h1.5v-.5zm4.293 7.169l-.444.605zM12 9.995l-.519.542a.75.75 0 0 0 1.038 0zm.957 3.674l-.444-.605zm-.957.462v-.75zm-.514-1.067c-.417-.306-.878-.69-1.227-1.092c-.368-.426-.509-.757-.509-.972h-1.5c0 .77.441 1.451.875 1.953c.453.524 1.014.983 1.474 1.32zM9.75 11c0-.576.263-.826.492-.907c.25-.088.714-.06 1.24.444l1.037-1.084c-.825-.79-1.861-1.095-2.773-.775C8.812 9.005 8.25 9.903 8.25 11zm3.65 3.274c.46-.338 1.022-.797 1.475-1.321c.434-.502.875-1.183.875-1.953h-1.5c0 .215-.141.546-.51.972c-.348.403-.809.786-1.226 1.092zM15.75 11c0-1.097-.562-1.995-1.496-2.322c-.912-.32-1.948-.014-2.773.775l1.038 1.084c.525-.504.989-.532 1.24-.444c.228.08.491.331.491.907zm-5.15 3.274c.368.27.782.607 1.4.607v-1.5c-.024 0-.04 0-.094-.029a4 4 0 0 1-.42-.288zm1.914-1.21a4 4 0 0 1-.42.288c-.054.029-.07.029-.094.029v1.5c.618 0 1.032-.337 1.4-.607z"/><path stroke="#ffffff44" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" d="M5 18h14"/></g></svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="52"
+                    height="52"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="24" height="24" fill="none" />
+                    <g fill="none">
+                      <path
+                        fill="#ffffff44"
+                        d="M19 18h.75zM5 14.584h.75a.75.75 0 0 0-.45-.687zm14 0l-.3-.687a.75.75 0 0 0-.45.687zM15.75 7a.75.75 0 0 0 1.5 0zm-9 0a.75.75 0 0 0 1.5 0zM7 4.25A5.75 5.75 0 0 0 1.25 10h1.5A4.25 4.25 0 0 1 7 5.75zm10 1.5A4.25 4.25 0 0 1 21.25 10h1.5A5.75 5.75 0 0 0 17 4.25zm-2 15.5H9v1.5h6zm-6 0c-.964 0-1.612-.002-2.095-.067c-.461-.062-.659-.169-.789-.3l-1.06 1.062c.455.455 1.022.64 1.65.725c.606.082 1.372.08 2.294.08zM4.25 18c0 .922-.002 1.688.08 2.294c.084.628.27 1.195.725 1.65l1.061-1.06c-.13-.13-.237-.328-.3-.79c-.064-.482-.066-1.13-.066-2.094zm14 0c0 .964-.002 1.612-.067 2.095c-.062.461-.169.659-.3.789l1.062 1.06c.455-.455.64-1.022.725-1.65c.082-.606.08-1.372.08-2.294zM15 22.75c.922 0 1.688.002 2.294-.08c.628-.084 1.195-.27 1.65-.726l-1.06-1.06c-.13.13-.328.237-.79.3c-.482.064-1.13.066-2.094.066zm-8-17q.32 0 .628.046l.219-1.484A6 6 0 0 0 7 4.25zm5-4.5a5.25 5.25 0 0 0-4.973 3.563l1.42.482A3.75 3.75 0 0 1 12 2.75zM7.027 4.813A5.3 5.3 0 0 0 6.75 6.5h1.5c0-.423.07-.828.198-1.205zM17 4.25q-.431 0-.847.062l.22 1.484A4 4 0 0 1 17 5.75zm-5-1.5a3.75 3.75 0 0 1 3.552 2.545l1.42-.482A5.25 5.25 0 0 0 12 1.25zm3.552 2.545c.128.377.198.782.198 1.205h1.5c0-.589-.097-1.156-.277-1.687zM5.75 18v-3.416h-1.5V18zm-.45-4.103A4.25 4.25 0 0 1 2.75 10h-1.5a5.75 5.75 0 0 0 3.45 5.271zm12.95.687V18h1.5v-3.416zm3-4.584a4.25 4.25 0 0 1-2.55 3.897l.6 1.374A5.75 5.75 0 0 0 22.75 10zm-5.5-3.5V7h1.5v-.5zm-9 0V7h1.5v-.5zm4.293 7.169l-.444.605zM12 9.995l-.519.542a.75.75 0 0 0 1.038 0zm.957 3.674l-.444-.605zm-.957.462v-.75zm-.514-1.067c-.417-.306-.878-.69-1.227-1.092c-.368-.426-.509-.757-.509-.972h-1.5c0 .77.441 1.451.875 1.953c.453.524 1.014.983 1.474 1.32zM9.75 11c0-.576.263-.826.492-.907c.25-.088.714-.06 1.24.444l1.037-1.084c-.825-.79-1.861-1.095-2.773-.775C8.812 9.005 8.25 9.903 8.25 11zm3.65 3.274c.46-.338 1.022-.797 1.475-1.321c.434-.502.875-1.183.875-1.953h-1.5c0 .215-.141.546-.51.972c-.348.403-.809.786-1.226 1.092zM15.75 11c0-1.097-.562-1.995-1.496-2.322c-.912-.32-1.948-.014-2.773.775l1.038 1.084c.525-.504.989-.532 1.24-.444c.228.08.491.331.491.907zm-5.15 3.274c.368.27.782.607 1.4.607v-1.5c-.024 0-.04 0-.094-.029a4 4 0 0 1-.42-.288zm1.914-1.21a4 4 0 0 1-.42.288c-.054.029-.07.029-.094.029v1.5c.618 0 1.032-.337 1.4-.607z"
+                      />
+                      <path
+                        stroke="#ffffff44"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.1"
+                        d="M5 18h14"
+                      />
+                    </g>
+                  </svg>
                   <span>
                     <h1>Passionate Chefs</h1>
-                      <span class="point-p">
-                      <img src="./aseets/food-icon.png" width="20" height="20">
-                      <p>Our team of expert chefs is dedicated to bringing you the best flavors and textures, with a touch of creativity in every plate.</p>
-                      </span>
+                    <span class="point-p">
+                      <img
+                        src="./aseets/food-icon.png"
+                        width="20"
+                        height="20"
+                      />
+                      <p>
+                        Our team of expert chefs is dedicated to bringing you
+                        the best flavors and textures, with a touch of
+                        creativity in every plate.
+                      </p>
+                    </span>
                   </span>
                 </div>
               </div>
             </div>
           </div>
+          <!-- online reservation  section-->
+          <div class="contact">
+            <div class="content menu-heading">
+                <h1> When We're avaiable </h1>
+                <p>At Yum Corner, we turn the art of cooking into a fun and delicious adventure. Our mission is to make cooking enjoyable for everyone, with recipes that are as delightful to make as they are to eat.</p>
+            </div>
+            
+            <div class="container">
+                 <!--*************** Contact Info Start ***************-->
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><b></b><i class="fa-solid fa-calendar-days"></i></div>
+                        <div class="text">
+                            <h3>Monday-Friday</h3>
+                            <p> 7.00 AM – 11.00 AM (Breakfast)<br>
+                                11.00 AM – 10.00 PM (Lunch / Dinner)</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><b></b><i class="fa-solid fa-calendar-days"></i></div>
+                        <div class="text">
+                            <h3>The Weekend</h3>
+                            <p> 9.00 AM - 11.00 AM (Brunch) <br>
+                                1.00 PM - 10.00 PM (Lunch / Dinner)</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><b></b><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+84 1234 14785 +84 9632 6578 6578 <br> +84 58241 6578 6578</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><b></b><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>yumCorner@gmail.com <br> yumCorner@yahoo.com </p>
+                        </div>
+                    </div>
+    
+                    <h1>Connect With Us</h1>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <!--*************** Contact Info End ***************-->
+    
+    
+                <!--*************** Contact Form Start ***************-->
+                <div class="contactForm">
+                    <form>
+                        <h2>Reservation</h2>
+                        <div class="inputBox">
+                            <input type="date" name="" required="required">
+                        </div>
+                        <div class="inputBox">
+                            <input type="time" name="" required="required">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Number Customer</span>
+                        </div>
+                      
+                        <div class="inputBox">
+                            <input type="submit" value="See a Menu">
+                        </div>
+                    </form>
+                </div>
+                <!--*************** Contact Form End ***************-->
+            </div>
+          </div>
+    
+
+
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
         <!-- About Conatiner -->
-        <div id="AboutContainer" style="display: none">
-          <h1>AboutContainer</h1>
+        <div id="AboutContainer"  style="display: none">
+          <!-- hero section -->
+            <div class="about-hero video-container">
+              <video
+                playsinline=""
+                autoplay=""
+                loop=""
+                muted=""
+              >
+                <source src="./aseets/about-top-video.mp4" type="video/mp4" />
+                <!-- <source src="http://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/pomegranate_seeds.mp4" type="video/mp4" /> -->
+              </video>
+            </div>
+           
+           <div class="menu-heading ">
+            <h1>our menu</h1>
+            <p>At Yum Corner, we believe that every meal should be an extraordinary experience. Our passion for exceptional flavors and culinary creativity is at the heart of everything we do. From the freshest ingredients to the meticulous preparation, each dish is crafted with love and attention to detail.
+            </p>
+           </div>
+           <div class="menu-container">
+              <div class="left">
+                  <div class="l1">
+                      <div class="img">
+                          <img src="https://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/cupcake-600x600.png" class="images">
+                          <div class="img-text">
+                              <button onclick="addToCard()"> ADD TO CART </button>
+                          </div>
+                      </div>
+                      <div class="content">
+                          <h4>Cup Cakes <span class="prize"> ................ </span><span class="prize">$15.00</span> </h4>
+                          <p>Flour, egg, butter, sugar, vanila, milk, cream, chocolate, carmel</p>
+                      </div>
+                  </div>
+
+                  <div class="l1">
+                      <div class="img">
+                          <img src="https://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/tiramisu-600x600.png" class="images">
+                          <div class="img-text">
+                              <button onclick="addToCard()"> ADD TO CART </button>
+                          </div>
+                      </div>
+                      <div class="content">
+                          <h4>Cup Cakes <span class="prize"> ................ </span><span class="prize">$18.00</span> </h4>
+                          <p>Flour, egg, butter, sugar, vanila, milk, cream, chocolate, carmel</p>
+                      </div>
+                  </div>
+
+
+                  <div class="l1">
+                      <div class="img">
+                          <img src="https://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/img3_1-600x600.png" class="images">
+                          <div class="img-text">
+                              <button onclick="addToCard()"> ADD TO CART </button>
+                          </div>
+                      </div>
+                      <div class="content">
+                          <h4>Cup Cakes <span class="prize"> ................ </span><span class="prize">$19.00</span> </h4>
+                          <p>Flour, egg, butter, sugar, vanila, milk, cream, chocolate, carmel</p>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="right">
+                  <div class="l1">
+                      <div class="img">
+                          <img src="https://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/friary-fruit-tart-600x600.png" class="images">
+                          <div class="img-text">
+                              <button onclick="addToCard()"> ADD TO CART </button>
+                          </div>
+                      </div>
+                      <div class="content">
+                          <h4>Cup Cake  <span class="prize"> ................ </span><span class="prize">$12.00</span> </h4>
+                          <p>Flour, egg, butter, sugar, vanila, milk, cream, chocolate, carmel</p>
+                      </div>
+                  </div>
+
+                  <div class="l1">
+                      <div class="img">
+                          <img src="https://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/pancakebacon-600x600.png" class="images">
+                          <div class="img-text">
+                              <button onclick="addToCard()"> ADD TO CART </button>
+                          </div>
+                      </div>
+                      <div class="content">
+                          <h4>Cup Cake  <span class="prize"> ................ </span><span class="prize">$20.00</span> </h4>
+                          <p>Flour, egg, butter, sugar, vanila, milk, cream, chocolate, carmel</p>
+                      </div>
+                  </div>
+
+                  <div class="l1" >
+                      <div class="img">
+                          <img src="https://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/b31-600x600.png" class="images">
+                          <div class="img-text">
+                              <button onclick="addToCard()"> ADD TO CART </button>
+                          </div>
+                      </div>
+                      <div class="content">
+                          <h4>Cup Cake  <span class="prize"> ................ </span><span class="prize">$15.00</span> </h4>
+                          <p>Flour, egg, butter, sugar, vanila, milk, cream, chocolate, carmel</p>
+                      </div>
+                    
+                  </div>
+                  
+              </div> 
+           </div>
+          
+           <div class="menu-cart">
+            <span class="yourCart">Your Cart <div id="cartNum">0</div></span>
+           </div>
+           <!-- short video -->
+            <div class="short-video-div">
+              <div class="short-sub-video">
+                <div class="short-text">
+                  <h1>It was love at first <span class="span"> Story</span></h1>
+                  <p>“Great plugin and amazing support. I trialed several plugins that try to accomplish the same thing. None of them did it as beautifully and as simple as EmbedStories”</p>
+                  <div class="in-line">
+                    <img src="./aseets/men2.png" class="short-men2">
+                  <p><span class="fw-bold">Bertha Jo,</span> CEO at jacole <br><span class="darling" style="font-family: darling;">Jacole</span></p>
+                  </div>
+                </div>
+                <div class="short-video">
+                  <video class="video2" playsinline autoplay loop muted>
+                    <source src="http://demo5.cmsmart.net/wordpress/foodlife_bakery/wp-content/uploads/2017/05/pomegranate_seeds.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <!-- special offer  -->
+            <div class="offer">
+              <div class="menu-heading ">
+                <h1>Special Offer</h1>
+                <p>We're more than just a place to eat</p>
+              </div>
+              <hr>
+              <hr>
+              <hr>
+              <hr>
+              <!-- <div class="offerDiv">
+                <div class="options">
+                  <p>Pizza Mondays</p>
+                  <p>Burger Tuesdays</p>
+                  <p>Ocean Wise Fish</p>
+                  <p>East Coast</p>
+                </div>
+                <div class="desp">
+                  <h1>$12 PIZZAS & $6 WINES</h1>
+                  <p>Pizza is a traditional dish consisting of a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven. It can also be topped with additional vegetables, meats, and condiments.</p>
+                </div>
+                <div class="img"><img src="https://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-4.png  "></div>
+              </div> -->
+            </div>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
         <!-- Recipe Container -->
         <div id="RecipeContainer" style="display: none">

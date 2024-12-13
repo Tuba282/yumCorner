@@ -37,11 +37,14 @@ const dasboardPages = () => {
     Pages.forEach((page, ind) => {
         let li = document.createElement("li")
         li.setAttribute("id", `${page}`)
+        let liSpan = document.createElement("span")
         let liText = document.createTextNode(`${page}`)
         let svg = document.createElement("span")
         svg.innerHTML = `${PageIcons[ind]}`
         li.appendChild(svg)
-        li.appendChild(liText)
+        liSpan.appendChild(liText)
+
+        li.appendChild(liSpan)
 
         sidebarPages.appendChild(li)
     })
@@ -58,7 +61,7 @@ gsap.fromTo(".heroImg-1",
     },
     {
         opacity: 1,
-        y:0,
+        y: 0,
         duration: 2,
         zIndex: 5,
     }
@@ -106,6 +109,198 @@ let bars = document.getElementById("bars")
 bars.addEventListener("click", () => {
     document.getElementById("sidebarPages").classList.toggle("show-links")
 })
+//********************************** sidebar Collapse  */
+
+let sidebarCollapse = document.getElementById("sidebarCollapse")
+sidebarCollapse.addEventListener("click", () => {
+    let logo = document.querySelector(".logo")
+    let plan = document.querySelector(".plan")
+    let logoFirstChild = document.querySelector(".logo").firstElementChild
+    let sidebarPages = document.getElementById("sidebarPages")
+    let ProfileContainer = document.getElementById("ProfileContainer")
+
+    logo.classList.toggle("no-border")
+    logo.classList.toggle("hidden")
+    plan.classList.toggle("hidden")
+    logoFirstChild.classList.toggle("hidden")
+    // sidebarPages.classList.toggle("hidden")
+    ProfileContainer.classList.toggle("hidden")
+
+
+
+
+    if (logo.classList.contains("hidden")) {
+        document.querySelector(".sidebar").style.width = "5%"
+        document.querySelector(".mainContent").style.width = "95%"
+
+
+        let getText = document.querySelectorAll("#sidebarPages li")
+        getText.forEach((text) => {
+            text.style.cssText = `justify-content: center;z-index: 2;width:"200px";padding: 2px 2px 2px 2px;`
+            text.lastElementChild.style.display = "none"
+        })
+
+        function checkScreenWidth() {
+            let mediaQuery = window.matchMedia("(max-width: 998px)");
+            if (mediaQuery.matches) {
+                console.log("Halloooo");
+                logo.classList.remove("no-border")
+                logo.classList.remove("hidden")
+                logoFirstChild.classList.remove("hidden")
+                // let logo = document.querySelector(".logo")
+                document.querySelector(".sidebar").style.width = "100%"
+                document.querySelector(".mainContent").style.width = "100%"
+
+
+            } else {
+                console.log("Not Haloo");
+            }
+        }
+
+        checkScreenWidth();
+
+
+        window.addEventListener("resize", checkScreenWidth);
+
+
+    } else {
+        document.querySelector(".sidebar").style.cssText = ``
+        document.querySelector(".mainContent").style.cssText = ``
+        console.log("else");
+        let getText = document.querySelectorAll("#sidebarPages li")
+        getText.forEach((text) => {
+            text.style.cssText = ``
+            text.lastElementChild.style.display = "block"
+        })
+    }
+})
+
+//********************************** Special Offer  */ 
+
+let offerData = [
+    {
+        name: "Pizza Mondays",
+        heading: "$12 PIZZAS & $6 WINES",
+        description: "Pizza is a traditional dish consisting of a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven. It can also be topped with additional vegetables, meats, and condiments.",
+        image: "https://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-1.png"
+    },
+    {
+        name: "Burger Tuesdays",
+        heading: "$12 BURGERS & $6 PINTS",
+        description: "A hamburger, beefburger or burger is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun. The patty may be >pan fried, barbecued, or flame broiled",
+        image: "https://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-2.png"
+    },
+    {
+        name: "Ocean Wise Fish",
+        heading: "$16 FISH & CHIPS",
+        description: "Fish and chips is a hot dish of English origin consisting of fried battered fish and hot potato chips. It is a common take-away food and an early example of culinary fusion.",
+        image: "https://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-3.png"
+    },
+    {
+        name: "East Coast",
+        heading: "$12 MUSSELS & $6 PINTS",
+        description: "Steaming fresh 'moules' make the perfect sharing bowl - flavour with sweet cider, herbs and garlic.",
+        image: "https://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-4.png"
+    }
+
+]
+
+let offerDiv = document.createElement("div")
+offerDiv.setAttribute("class", "offerDiv")
+
+let offer = document.querySelector(".offer");
+offerDiv.innerHTML = `
+        <div class="options">
+            <p onClick="firstOffer()">${offerData[0].name}</p>
+            <p onClick="secondOffer()">${offerData[1].name}</p>
+            <p onClick="thirdOffer()">${offerData[2].name}</p>
+            <p onClick="forthOffer()">${offerData[3].name}</p>
+        </div>
+        <div class="desp">
+            <h1>${offerData[0].heading}</h1>
+            <p>${offerData[0].description}</p>
+            <hr/>
+        </div>
+        <div class="img">
+            <img src="${offerData[0].image}">
+        </div>
+`;
+console.log(offerDiv);
+
+
+const firstOffer = () => {
+    offerDiv.innerHTML = `
+        <div class="options">
+            <p onClick="firstOffer()">${offerData[0].name}</p>
+            <p onClick="secondOffer()">${offerData[1].name}</p>
+            <p onClick="thirdOffer()">${offerData[2].name}</p>
+            <p onClick="forthOffer()">${offerData[3].name}</p>
+        </div>
+        <div class="desp">
+            <h1>${offerData[0].heading}</h1>
+            <p>${offerData[0].description}</p>
+            <hr/>
+        </div>
+        <div class="img">
+            <img src="${offerData[0].image}">
+        </div>
+`;
+}
+const secondOffer = () => {
+    offerDiv.innerHTML = `
+        <div class="options">
+            <p onClick="firstOffer()">${offerData[0].name}</p>
+            <p onClick="secondOffer()">${offerData[1].name}</p>
+            <p onClick="thirdOffer()">${offerData[2].name}</p>
+            <p onClick="forthOffer()">${offerData[3].name}</p>
+        </div>
+        <div class="desp">
+            <h1>${offerData[1].heading}</h1>
+            <p>${offerData[1].description}</p>
+            <hr/>
+        </div>
+        <div class="img">
+            <img src="${offerData[1].image}">
+        </div>
+`;
+}
+const thirdOffer = () => {
+    offerDiv.innerHTML = `
+        <div class="options">
+            <p onClick="firstOffer()">${offerData[0].name}</p>
+            <p onClick="secondOffer()">${offerData[1].name}</p>
+            <p onClick="thirdOffer()">${offerData[2].name}</p>
+            <p onClick="forthOffer()">${offerData[3].name}</p>
+        </div>
+        <div class="desp">
+            <h1>${offerData[2].heading}</h1>
+            <p>${offerData[2].description}</p>
+            <hr/>
+        </div>
+        <div class="img">
+            <img src="${offerData[2].image}">
+        </div>
+`;
+}
+const forthOffer = () => {
+    offerDiv.innerHTML = `
+        <div class="options">
+            <p onClick="firstOffer()">${offerData[0].name}</p>
+            <p onClick="secondOffer()">${offerData[1].name}</p>
+            <p onClick="thirdOffer()">${offerData[2].name}</p>
+            <p onClick="forthOffer()">${offerData[3].name}</p>
+        </div>
+        <div class="desp">
+            <h1>${offerData[3].heading}</h1>
+            <p>${offerData[3].description}</p>
+            <hr/>
+        </div>
+        <div class="img">
+            <img src="${offerData[3].image}">
+        </div>
+`;
+}
+offer.appendChild(offerDiv);
 
 //********************************** Page linking  */ 
 const ids = ['Home', 'About Us', 'Recipe', 'Tips', 'Gallery', 'WishList', 'Profile', 'SignUp', 'Login'];
@@ -123,10 +318,20 @@ const sections = [
 
 ids.forEach((id, index) => {
     document.getElementById(id).addEventListener("click", () => {
-        document.getElementById("topPageName").textContent = id;
         sections.forEach((sec, secIndex) => {
             document.getElementById(sec).style.display = (index === secIndex) ? "grid" : "none";
         });
     });
 });
+
+//********************************** menu cart  */ 
+
+
+function addToCard() {
+
+    let cartNum = document.getElementById("cartNum");
+    let currentNum = parseInt(cartNum.textContent);
+    let updatedNum = currentNum + 1;
+    cartNum.textContent = updatedNum;
+}
 
